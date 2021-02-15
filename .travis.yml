@@ -2,11 +2,11 @@ arch:
   - amd64
   - ppc64le
 language: c
-compiler: g++
-addons:
-  - cmake
 before_install:
+  - apt update -y
+  - apt upgrade -y
+  - apt install cmake build-essential
+install:
   - ./configure
   - make
-install:
   - make install
