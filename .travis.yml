@@ -1,0 +1,10 @@
+arch:
+  - amd64
+  - ppc64le
+language: c
+compiler: C++
+script:
+  - ./configure
+  - make
+install:
+  - make install
