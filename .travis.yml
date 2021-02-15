@@ -5,7 +5,7 @@ language: c
 compiler: g++
 addons:
   - cmake
-script:
+before_install:
   - ./configure
   - make
 install:
