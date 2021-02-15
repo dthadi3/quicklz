@@ -3,9 +3,9 @@ arch:
   - ppc64le
 language: c
 before_install:
-  - apt update -y
-  - apt upgrade -y
-  - apt install cmake build-essential
+  - apt-get update -y
+  - apt-get upgrade -y
+  - apt-get install cmake build-essential
 install:
   - ./configure
   - make
