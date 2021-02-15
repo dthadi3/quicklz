@@ -3,6 +3,8 @@ arch:
   - ppc64le
 language: c
 compiler: g++
+addons:
+  - cmake
 script:
   - ./configure
   - make
